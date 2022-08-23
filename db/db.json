@@ -1,6 +1,8 @@
-[
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
-]
+{
+    "db": [
+        {
+            "title": "Challenge 11",
+            "text": "It is really hard but I'll do my best. Due date next Thursday 25th"
+        }
+    ]
+}
