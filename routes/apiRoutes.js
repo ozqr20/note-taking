@@ -6,11 +6,11 @@ const router = require('express').Router();
 const fs = require('fs');
 
 
-router.get('/api/notes', (req, res) => {
+router.get('/notes', (req, res) => {
     res.json(note);
 });
 
-router.post('/api/notes', (req, res) => {
+router.post('/notes', (req, res) => {
     req.body.id = uniqid();
     const temporalNote = req.body;
     console.log(note);
@@ -20,7 +20,7 @@ router.post('/api/notes', (req, res) => {
     res.json(temporalNote);
 });
 
-router.delete('/api/notes/:id', (req,res) =>{
+router.delete('/notes/:id', (req,res) =>{
     const id = req.params.id;
     for (i = 0; i <note.length; i++) {
         if(note[i].id === id){
