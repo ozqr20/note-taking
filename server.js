@@ -28,21 +28,20 @@ app.get('*', (req,res) => {
 })
 
 app.get('/api/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '/db.db.json'));
+    res.sendFile(path.join(__dirname, '/db/db.json'));
 })
 
-app.post('/api/routes', (req,res) => {
+app.post('/api/notes', (req,res) => {
     let note = req.body;
-    let list = JSON(parse(fs.readFileSync('/db/db.json', 'utf8')));
+    let list = JSON.parse(fs.readFileSync('/db/db.json', 'utf8'));
     let lengthNote = list.length.toString();
 
-    newNote.id = lengthNote;
+    note.id = lengthNote;
     list.push(newNote);
 
     fs.writeFileSync('/db/db.json', JSON.stringify(list));
     res.json(list);
 })
-
 
 app.listen(PORT, () => {
     console.log(`API server now on port ${PORT}`);
