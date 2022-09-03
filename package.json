@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +14,13 @@
   },
   "devDependencies": {
     "jest": "^28.1.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozqr20/note-taking.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ozqr20/note-taking/issues"
+  },
+  "homepage": "https://github.com/ozqr20/note-taking#readme"
 }
