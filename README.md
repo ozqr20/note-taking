@@ -9,7 +9,14 @@
   * [Credits](#credits)
   
   ## Description
-  This project is meant to help you organize tasks by adding and removing them from the application.  
+  This is an add/remove task app inside Heroku's server. Technologies used to accomplish this task are the following:
+  * HTML / CSS
+  * JavaScript
+  * Express.js
+  * Heroku
+  * CSS Framework - Boostrap 
+  * JSON
+  * Routes
 
   ## Installation
   To be able to use this application you have to clone or fork into your local computer by coping the link then in your terminal type git clone [paste your link].     After this is done you need to make sure that you are in the root of your project before downloading the following packages: 
