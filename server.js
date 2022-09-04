@@ -1,15 +1,16 @@
-const apiRoutes = require("./routes/apiRoutes");
-const htmlRoutes = require("./routes/htmlRoutes");
 const express = require('express');
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
+const apiRoutes = require("./routes/apiRoutes");
+const htmlRoutes = require("./routes/htmlRoutes");
+
 // Middleware helper functions
 
-app.use(express.static('./public'));
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
+// it makes js and css work 
+app.use(express.static('public'));
 
 app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
