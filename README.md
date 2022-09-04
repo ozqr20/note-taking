@@ -5,7 +5,6 @@
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
-  * [Contribution](#contribution)
   * [Licence](#licence)
   * [Credits](#credits)
   
@@ -20,8 +19,6 @@
   ## Usage
   After the installation is done you need to run npm start to run your server, make sure you have an account with Heroku and it is link to your IDE.
 
-  ## Contribution
-  There are not contributions accepted at the moment, please check it out at a later time.
   
   ![Screenshot (980)](https://user-images.githubusercontent.com/53874145/188292869-4f8638f5-c3ad-49b7-8ef8-fb8df5be7caa.png)
   
